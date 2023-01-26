@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseInt(prompt("nota 1"));
+        var nota2 = parseInt(prompt("nota 2"));
+        var nota3 = parseInt(prompt("nota 3"));
+        var nota4 = parseInt(prompt("nota 4"));
+
+        var total = nota1 + nota2 + nota3 + nota4;
+        var total2 = parseInt(total) / 4;
+        var chare = /[A-Za-z]/;
+        while (total2 > 5 || total != total) {
+        if (true) {
+            alert(
+            "no puede ingresar notas mayor a 5 o caracteres especiales, ingrese nuevamente"
+            );
+            var nota1 = parseInt(prompt("nota 1"));
+            var nota2 = parseInt(prompt("nota 2"));
+            var nota3 = parseInt(prompt("nota 3"));
+            var nota4 = parseInt(prompt("nota 4"));
+            var total = nota1 + nota2 + nota3 + nota4;
+            var total2 = parseInt(total) / 4;
+            break;
+        }
+        }
+
+        if (total2 >= 4) {
+        document.write("gano con:", total2);
+        } else {
+        document.write("perdio con:", total2);
+        }
+    </script>
+    
+</body>
+</html>

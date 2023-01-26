@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var nombre = prompt("Ingrese Nombre")
+        var invertir = parseInt(prompt("Cuanto va a invertir"))
+        var cuotas = parseInt(prompt("Por cuanto cuantos meses va a pagar esa cantidad"))
+        meses = 1
+
+        total1 = parseInt(cuotas) * meses
+        total = parseInt(invertir) * parseInt(total1) 
+        total2 = parseInt(total) * (2.43/100)
+        total3 = cuotas + Math.round(total2)
+        
+
+        document.write("Su total a Pagar es" + " " + total + " " + "Sus intereses" + " " + Math.round(total2) + "<br>" + " " + " Pagas cada mes" + " " + total3)
+        
+
+
+       
+
+        
+    </script>
+    
+</body>
+</html>

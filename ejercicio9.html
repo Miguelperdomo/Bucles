@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <script>
+        var nombre = prompt("Ingrese el nombre")
+
+        var monto = prompt("Cuanto es su monto")
+
+        if (monto < 0 ){
+            document.write("Usted No puede ingresar con los datos");
+            var monto = prompt("Cuanto es su monto")
+        }if (monto < 0){
+            document.write("usted no puede ingresar datos")
+        }else{
+            total = monto - (10/100)
+            document.write("Su monto de descuento es" + " " + total)
+        }
+    </script>
+    
+</body>
+</html>
